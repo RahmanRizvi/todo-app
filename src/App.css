@@ -1,0 +1,93 @@
+body{
+    background: #5c6b77;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eef2f3, #bdc3c8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #c8caca, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'poppins';
+    
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888; /* A subtle gray for completed tasks */
+    background-color: #e6e6e6; /* Light background for better contrast */
+    padding: 5px 10px; /* Add some padding for a cleaner look */
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+.completed:hover {
+    background-color: #e2e2e2; /* Change background on hover */
+    color: #555; /* Darken the text color on hover */
+    cursor: pointer; /* Pointer cursor for hover */
+}
+
+/* Change the color of the placeholder text */
+input::placeholder {
+    color: #c2c2c2 !important; /* Choose the color you want */
+}
+
+p {
+    font-size: 14px; /* Default font size */
+  }
+  
+  @media (min-width: 992px) { /* Bootstrap 'lg' breakpoint (992px and up) */
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .text-gradient {
+    background: linear-gradient(to right, #007bff, #ed2a8b); /* Blue to Pink gradient */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 3rem; /* Default font size for large devices */
+    font-weight: bold;
+}
+
+/* Media query for small devices */
+@media (max-width: 576px) {
+    .text-gradient {
+        font-size: 2rem; /* Smaller font size for mobile devices */
+    }
+}
+
+@media (min-width: 380px) and (max-width: 767px) {
+    .text-gradient {
+        font-size: 2rem; /* Adjust for medium-sized devices (like tablets in portrait mode) */
+    }
+}
+
+.custom-input {
+    width: 280px; /* Adjust the width as needed */
+    max-width: 100%; /* Ensures it doesn't overflow the container */
+}
+
+/** Text Gradient Example */ 
+.text-gradient2 {
+    background-image: linear-gradient(45deg, #592E2F , #894939 , #C87A4B , #F0B268 , #FADAA0 ); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+
+
+.btn-grad {background-image: linear-gradient(to right, #F09819 0%, #EDDE5D  51%, #F09819  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
