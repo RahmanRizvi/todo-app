@@ -20,18 +20,20 @@ const AddTodo = ({addTodo, todos}) => {
     };
 
     return (
-        <div className="container-fluid shadow-lg position-fixed bottom-0 start-0 end-0 p-3 d-flex align-items-center justify-content-between">
-            <input
-                type="text"
-                className="form-control mar1 me-2 border1 fs-5 py-2 px-4 rounded-4 border-2 shadow-lg"
-                placeholder="Add a new todo"
-                onChange={(e) => setText(e.target.value)}
-                value={text}
-            />
-            <button className="btn btn-primary rounded-4 d-flex mar p-2 align-items-center justify-content-center shadow lg" onClick={handleSubmit}>
-                <i className='bx bx-plus fs-3 text-white'></i>
-            </button>
-        </div>
+        <div className="position-fixed bottom-0 start-0 end-0 shadow-lg py-3">
+            <div className="container d-flex justify-content-between align-items-center">
+                <input
+                    type="text"
+                    className="form-control me-2 border1 fs-5 py-2 px-4 rounded-4 border-2 shadow-lg"
+                    placeholder="Add a new todo"
+                    onChange={(e) => setText(e.target.value)}
+                    value={text}
+                />
+                <button className="btn btn-primary rounded-4 d-flex p-2 align-items-center justify-content-center shadow lg" onClick={handleSubmit}>
+                    <i className='bx bx-plus fs-3 text-white'></i>
+                </button>
+            </div>
+         </div>
     );
 };
 
