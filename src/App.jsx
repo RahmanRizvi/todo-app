@@ -106,11 +106,11 @@ function App() {
         <i className='bx bxs-door-open' undefined ></i>
       </button>
 
-      <h1 className="text-gradient mt-5 mb-3 fw-bolder">Hey, {username}!</h1>
+      <h1 className="text-gradient mar3 mb-3 fw-bolder">Hey, {username}!</h1>
       <p className="mb-3 fw-medium text-secondary">Effortlessly keep track of what matters most.</p>
       <input 
       type='text' 
-      className="form-control fs-5 mb-5 rounded-4 border2 bg-white "
+      className="form-control fs-5 mb-5 rounded-4 border-2 border1 bg-white "
       placeholder='Search your todos'
       onChange={(e) => setSearchkey(e.target.value)}/>
 

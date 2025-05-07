@@ -2,7 +2,7 @@ const TodoList = ({ todos, deleteTodo, toggleComplete }) => {
     return (
         <div className="list-group mb-5"> {/* mb-5 to avoid overlap with fixed input */}
             {todos.map(item => (
-                <div key={item.id} className="list-group-item d-flex justify-content-between border2 align-items-center rounded-4 border-2 mb-2 bg-light">
+                <div key={item.id} className="list-group-item d-flex justify-content-between border2 align-items-center shadow-sm rounded-4 border-2 mb-2 bg-light">
                     <div className="d-flex align-items-center gap-2">
                         <input
                             type="checkbox"

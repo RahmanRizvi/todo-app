@@ -71,11 +71,25 @@ p {
  }
 
  .border2{
-    border-color: #b9b8b8;
+    border-color: #a8a8a8;
  }
 
  @font-face {
     font-family: 'Boxicons';
     src: url('https://unpkg.com/boxicons@2.1.4/fonts/boxicons.woff2') format('woff2');
     font-display: swap;
+}
+
+@media (min-width: 1200px) {
+    .mar {
+        margin-right: 190px;
+    }
+
+    .mar1 {
+        margin-left: 190px;
+    }
+}
+
+.mar3{
+    margin-top: 80px;
 }
