@@ -78,13 +78,12 @@ function App() {
   // If username is not set or logged in, show the login form
   if (!isLoggedIn) {
     return (
-      <div className="container">
-      <div className='d-flex justify-content-center align-items-center flex-column vh-100'>
-      <h3 className="text-gradient fs-1 fw-medium mb-3 fw-bolder">To-Do App</h3>
+      <div className='container d-flex justify-content-center align-items-center flex-column vh-100'>
+      <h3 className="text-gradient text-center mb-3 ">Welcome! Your to-do list awaits, log in to take control.</h3>
        <form onSubmit={handleLogin} noValidate className='d-flex justify-content-center align-items-center flex-column'>
         <input
             type="text"
-            className="form-control mb-4 rounded-5 bg-white custom-input text-center"
+            className="form-control mb-4 rounded-5 py-1 fs-4 bg-white custom-input text-center"
             placeholder="Enter your name"
             value={username} // Ensure input is controlled
             onChange={handleInputChange} // Update state on input change
@@ -93,26 +92,25 @@ function App() {
                 if (e.key === 'Enter') e.preventDefault();
             }}
         />
-         <button type="submit" className="btn rounded-5 px-3 bg-black text-white">Get Start</button>
+         <button type="submit" className="btn rounded-5 px-3 py-1 fw-medium fs-4 bg-black text-white">Get Start</button>
        </form>
-      </div>
       </div>
     );
   }
 
   return (
-    <div className="container mt-5">
+    <div className="container">
        <button 
         onClick={handleLogout} 
         className="btn btn-danger mb-4 position-absolute top-0 end-0 mt-3 me-3 p-2 fs-3 rounded-4 d-flex align-items-center justify-content-center"> 
         <i className='bx bxs-door-open' undefined ></i>
       </button>
 
-      <h1 className="text-gradient mb-3 fw-bolder">Hey, {username}!</h1>
-      <p className="mb-3 fw-medium text-white">Stay on top of your tasks, effortlessly!</p>
+      <h1 className="text-gradient mt-5 mb-3 fw-bolder">Hey, {username}!</h1>
+      <p className="mb-3 fw-medium text-secondary">Effortlessly keep track of what matters most.</p>
       <input 
       type='text' 
-      className="form-control mb-5 rounded-4 border-2 bg-white"
+      className="form-control fs-5 mb-5 rounded-4 border-2 bg-white "
       placeholder='Search your todos'
       onChange={(e) => setSearchkey(e.target.value)}/>
 

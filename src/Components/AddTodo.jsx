@@ -20,15 +20,15 @@ const AddTodo = ({addTodo, todos}) => {
     };
 
     return (
-        <div className="position-fixed bottom-0 start-0 end-0  p-3 d-flex align-items-center mx-lg-4 justify-content-between">
+        <div className="container-fluid shadow-lg position-fixed bottom-0 start-0 end-0 p-3 d-flex align-items-center justify-content-between">
             <input
                 type="text"
-                className="form-control me-2 py-2 px-4 rounded-4 border-2 shadow-sm"
+                className="form-control ms-lg-4 me-2 border1 fs-5 py-2 px-4 rounded-4 border-2 shadow-lg"
                 placeholder="Add a new todo"
                 onChange={(e) => setText(e.target.value)}
                 value={text}
             />
-            <button className="btn btn-primary rounded-4 d-flex p-2 align-items-center justify-content-center" onClick={handleSubmit}>
+            <button className="btn btn-primary rounded-4 d-flex me-lg-4 p-2 align-items-center justify-content-center shadow lg" onClick={handleSubmit}>
                 <i className='bx bx-plus fs-3 text-white'></i>
             </button>
         </div>
