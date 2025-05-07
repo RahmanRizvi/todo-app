@@ -7,7 +7,7 @@ const TodoList = ({ todos, deleteTodo, toggleComplete }) => {
                         <input
                             type="checkbox"
                             checked={item.isCompleted}
-                            className="form-check-input border border-1 d-flex align-items-center mb-1"
+                            className="form-check-input border border-2 d-flex align-items-center mb-1"
                             onChange={() => toggleComplete(item.id)}
                         />
                         <span className={item.isCompleted ? "completed" : "fs-5"}>

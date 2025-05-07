@@ -79,11 +79,11 @@ function App() {
   if (!isLoggedIn) {
     return (
       <div className='container d-flex justify-content-center align-items-center flex-column vh-100'>
-      <h3 className="text-gradient text-center mb-3 ">Welcome! Your to-do list awaits, log in to take control.</h3>
-       <form onSubmit={handleLogin} noValidate className='d-flex justify-content-center align-items-center flex-column'>
+      <h3 className="text-gradient text-center mb-3 ">“Welcome! Get started and take control of your to-do list.”</h3>
+       <form onSubmit={handleLogin} noValidate className='d-flex gap-2 justify-content-center align-items-center flex-column'>
         <input
             type="text"
-            className="form-control mb-4 rounded-5 py-1 fs-4 bg-white custom-input text-center"
+            className="form-control border-secondary border-2 mb-2 rounded-4 fs-5 bg-white custom-input text-center"
             placeholder="Enter your name"
             value={username} // Ensure input is controlled
             onChange={handleInputChange} // Update state on input change
@@ -92,7 +92,7 @@ function App() {
                 if (e.key === 'Enter') e.preventDefault();
             }}
         />
-         <button type="submit" className="btn rounded-5 px-3 py-1 fw-medium fs-4 bg-black text-white">Get Start</button>
+         <button type="submit" className="btn rounded-4 p-2 px-4 fs-4 d-flex justify-content-center align-items-center btn-grad text-white"><i class='bx bx-right-arrow-alt'></i></button>
        </form>
       </div>
     );
@@ -102,7 +102,7 @@ function App() {
     <div className="container">
        <button 
         onClick={handleLogout} 
-        className="btn btn-danger mb-5 position-absolute top-0 end-0 mt-3 me-3 p-2 fs-3 rounded-4 d-flex align-items-center justify-content-center"> 
+        className="btn btn-grad1 mb-5 position-absolute top-0 end-0 mt-3 me-3 p-2 fs-3 rounded-4 d-flex align-items-center justify-content-center"> 
         <i className='bx bxs-door-open' undefined ></i>
       </button>
 
