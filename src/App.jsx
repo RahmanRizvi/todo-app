@@ -79,7 +79,7 @@ function App() {
   if (!isLoggedIn) {
     return (
       <div className='container d-flex justify-content-center align-items-center flex-column vh-100'>
-      <h3 className="text-gradient text-center mb-3 ">“Welcome! Get started and take control of your to-do list.”</h3>
+      <h3 className="text-gradient text-center mb-3 ">Welcome! Get started and take control of your to-do list.</h3>
        <form onSubmit={handleLogin} noValidate className='d-flex gap-2 justify-content-center align-items-center flex-column'>
         <input
             type="text"
@@ -107,7 +107,7 @@ function App() {
       </button>
 
       <h1 className="text-gradient mar3 mb-3 fw-bolder">Hey, {username}!</h1>
-      <p className="mb-3 fw-medium text-secondary">Effortlessly keep track of what matters most.</p>
+      <p className="mb-3 fw-medium text-secondary">Turn your to-dos into done-dones.</p>
       <input 
       type='text' 
       className="form-control fs-5 mb-5 rounded-4 border-2 border1 bg-white "

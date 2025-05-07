@@ -24,12 +24,12 @@ const AddTodo = ({addTodo, todos}) => {
             <div className="container d-flex justify-content-between align-items-center">
                 <input
                     type="text"
-                    className="form-control me-2 border1 fs-5 py-2 px-4 rounded-4 border-2 shadow-lg"
+                    className="form-control me-2 border1 fs-5 py-2 px-4 rounded-4 border-2"
                     placeholder="Add a new todo"
                     onChange={(e) => setText(e.target.value)}
                     value={text}
                 />
-                <button className="btn btn-primary rounded-4 d-flex p-2 align-items-center justify-content-center shadow lg" onClick={handleSubmit}>
+                <button className="btn btn-primary rounded-4 d-flex p-2 align-items-center justify-content-center" onClick={handleSubmit}>
                     <i className='bx bx-plus fs-3 text-white'></i>
                 </button>
             </div>

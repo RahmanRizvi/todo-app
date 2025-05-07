@@ -38,14 +38,14 @@ p {
     background: linear-gradient(to right, #007bff, #ed2a8b); 
     -webkit-background-clip: text;
     background-clip: text;
-    font-size: 60px !important;
+    font-size: 70px !important;
     color: transparent; 
     font-weight: bold;
 }
 
 @media (min-width: 300px) and (max-width: 767px) {
     .text-gradient {
-       font-size: 35px !important; 
+       font-size: 34px !important; 
        font-weight: 700 !important;
     }
 }
