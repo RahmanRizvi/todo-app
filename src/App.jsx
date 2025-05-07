@@ -102,7 +102,7 @@ function App() {
     <div className="container">
        <button 
         onClick={handleLogout} 
-        className="btn btn-danger mb-4 position-absolute top-0 end-0 mt-3 me-3 p-2 fs-3 rounded-4 d-flex align-items-center justify-content-center"> 
+        className="btn btn-danger mb-5 position-absolute top-0 end-0 mt-3 me-3 p-2 fs-3 rounded-4 d-flex align-items-center justify-content-center"> 
         <i className='bx bxs-door-open' undefined ></i>
       </button>
 
@@ -110,7 +110,7 @@ function App() {
       <p className="mb-3 fw-medium text-secondary">Effortlessly keep track of what matters most.</p>
       <input 
       type='text' 
-      className="form-control fs-5 mb-5 rounded-4 border-2 bg-white "
+      className="form-control fs-5 mb-5 rounded-4 border2 bg-white "
       placeholder='Search your todos'
       onChange={(e) => setSearchkey(e.target.value)}/>
 

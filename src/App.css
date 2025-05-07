@@ -11,27 +11,26 @@ body{
     color: #5c5c5c; 
     background-color: #bcbcbc; 
     padding: 5px 10px; 
-    border-radius: 5px; /* Rounded corners */
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    border-radius: 5px; 
+    transition: all 0.3s ease; 
 }
 .completed:hover {
-    background-color: #e2e2e2; /* Change background on hover */
-    color: #555; /* Darken the text color on hover */
-    cursor: pointer; /* Pointer cursor for hover */
+    background-color: #e2e2e2; 
+    color: #555; 
+    cursor: pointer; 
 }
 
-/* Change the color of the placeholder text */
 input::placeholder {
-    color: #898989 !important; /* Choose the color you want */
+    color: #898989 !important; 
 }
 
 p {
-    font-size: 22px; /* Default font size */
+    font-size: 22px !important; 
   }
   
-  @media (min-width: 992px) { /* Bootstrap 'lg' breakpoint (992px and up) */
+  @media (min-width: 992px) { 
     p {
-      font-size: 28px;
+      font-size: 28px !important;
     }
   }
 
@@ -39,24 +38,23 @@ p {
     background: linear-gradient(to right, #007bff, #ed2a8b); 
     -webkit-background-clip: text;
     background-clip: text;
-    font-size: 60px;
+    font-size: 60px !important;
     color: transparent; 
     font-weight: bold;
 }
 
 @media (min-width: 300px) and (max-width: 767px) {
     .text-gradient {
-       font-size: 35px;
-       font-weight: 700;
+       font-size: 35px !important; 
+       font-weight: 700 !important;
     }
 }
 
 .custom-input {
-    width: 280px; /* Adjust the width as needed */
-    max-width: 100%; /* Ensures it doesn't overflow the container */
+    width: 280px !important;
+    max-width: 100%; 
 }
 
-/** Text Gradient Example */ 
 .text-gradient2 {
     background-image: linear-gradient(45deg, #592E2F , #894939 , #C87A4B , #F0B268 , #FADAA0 ); 
     background-clip: text; 
@@ -75,3 +73,9 @@ p {
  .border2{
     border-color: #b9b8b8;
  }
+
+ @font-face {
+    font-family: 'Boxicons';
+    src: url('https://unpkg.com/boxicons@2.1.4/fonts/boxicons.woff2') format('woff2');
+    font-display: swap;
+}
